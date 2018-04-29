@@ -22,3 +22,7 @@ Hypnotize in action 😱:
 
 ## Play with it 🍭
 Feel free to clone repo and play with my code, maybe one of prepared playgrounds will inspire you to create some cool additional effects for your UI. 😉
+
+
+# TODO
+- [ ] Update README in terms of InstaGradient animation
