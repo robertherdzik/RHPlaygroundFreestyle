@@ -12,7 +12,7 @@ baseView.backgroundColor = UIColor.white
 let circlePath = UIBezierPath(arcCenter: baseView.center,
                               radius: viewFrame.size.width/2,
                               startAngle: CGFloat(0),
-                              endAngle:CGFloat(M_PI * 2),
+                              endAngle: CGFloat.pi * 2,
                               clockwise: true)
 
 let lineWidth = CGFloat(3)
@@ -42,7 +42,7 @@ fade.fromValue = 0.0
 fade.toValue = 0.02
 fade.duration = commonAnimationDuration
 fade.repeatCount = .infinity
-fade.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+fade.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
 
 shapeLayer.add(fade, forKey: "shapeLayerOpacity")
 
@@ -52,7 +52,7 @@ scale.fromValue = NSValue(caTransform3D: CATransform3DMakeScale(0, 0, 1))
 scale.toValue = NSValue(caTransform3D: CATransform3DMakeScale(1, 1, 1))
 scale.duration = commonAnimationDuration
 scale.repeatCount = .infinity
-scale.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+scale.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
 
 shapeLayer.add(scale, forKey: "shapeLayerScale")
 

@@ -11,7 +11,7 @@ animation.fromValue = -view.bounds.width
 animation.toValue = 2*view.bounds.width
 animation.isRemovedOnCompletion = false
 animation.repeatCount = Float.infinity
-animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
 
 func addGradient(view: UIView) -> CAGradientLayer {
     let gradient = CAGradientLayer()
